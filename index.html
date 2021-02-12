@@ -4,60 +4,161 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Leonardo / Front-end</title>
   </head>
   <body>
     <div class="container">
       <!-- start HEADER -->
       <header>
-        <nav class="primary-menu">
+        <nav class="primary-menu contain">
           <a href="#" class="logo">
-            <img src="./images/logo-semibold.svg" alt="logo"/>
+            <img src="./images/logo-semibold.svg" alt="logo" />
           </a>
           <a href="#" class="nav-toogle">
-            <img src="./images/icon__menu.svg" alt="menu"/>
+            <img src="./images/icon-menu.svg" alt="menu" />
           </a>
+          <ul class="navbar">
+            <li><a href="" class="text--white">Sobre</a></li>
+            <li><a href="" class="text--white">Contato</a></li>
+            <li><a href="" class="btn btn--wire text--white">Portfólio</a></li>
+          </ul>
         </nav>
       </header>
       <!-- end HEADER -->
       <main>
         <!-- start HERO -->
-        <section class="hero">
-          <!-- <div class="hero__mask"></div>
-          <div class="hero__bg"></div> -->
+        <div class="hero">
+          <div class="hero__mask"></div>
+          <div class="hero__bg"></div>
           <div class="hero__container">
             <div class="hero__content">
               <div class="hero__wrap">
                 <!-- <p class="text--white welcome">Bem vindo</p> -->
-                <h1 class="text--white">Me chamo<span>Leonardo Teixeira</span></h1>
-                <h2 class="text--white">Desenvolvedor Front-end de Limeira-SP, Brasil.</h2>
+                <h1 class="text--white">
+                  Me chamo<span>Leonardo Teixeira</span>
+                </h1>
+                <h2 class="text--white">
+                  Desenvolvedor Front-end de<br />Limeira-SP, Brasil.
+                </h2>
                 <p class="text--white"></p>
               </div>
             </div>
           </div>
           <a href="#" class="scroll-down">
-            <img class="animated" src="./images/icon-down-arrow.svg">
+            <img class="animated" src="./images/icon-down-arrow.svg" />
           </a>
-        </section>
+        </div>
         <!-- end HERO -->
         <!-- start ABOUT -->
         <section class="about">
-          <div class="about__wrap">
+          <div class="about__wrap contain">
             <div class="about__content">
-              <div class="about__pic"><img src="" alt=""></div>
-              <div class="about__text text--center">
-                <h2 class="text--white">About me</h2>
-                <h3 class="text--white">Olá! Eu sou o <span class="text--highlight">Leonardo.</span></h3>
-                <p class="text--white-mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eum ab doloribus, dolores quidem, non quod repellat unde eius ratione consequuntur. Dolorum, fugit cupiditate obcaecati optio dignissimos numquam dolor omnis.
-                Dolor esse, odio vel distinctio iste voluptas corrupti doloremque est amet vero sed eaque itaque repellendus rem provident, recusandae ea. Aperiam doloremque harum esse explicabo libero provident facere. Nisi, corporis.</p>
-                <p class="text--white-mid">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum, quae ipsa itaque aliquam tenetur repellat ratione a nulla magni harum est eius! Eaque est officiis dicta accusamus reiciendis nobis?</p>
-                <a href="#" class="btn text--white">Baixar CV</a>
+              <div class="about__pic">
+                <img src="https://via.placeholder.com/500x625" alt="Foto de Leonardo"/>
+              </div>
+              <div class="about__text text--center text--lg-left">
+                <h2 class="text--white">Sobre mim</h2>
+                <h3 class="text--white">
+                  Olá! Eu sou o <span class="text--highlight">Leonardo.</span>
+                </h3>
+                <p class="text--white-mid">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis eum ab doloribus, dolores quidem, non quod
+                  repellat unde eius ratione consequuntur. Dolorum, fugit
+                  cupiditate obcaecati optio dignissimos numquam dolor omnis.
+                  Dolor esse, odio vel distinctio iste voluptas corrupti
+                  doloremque est amet vero sed eaque itaque repellendus rem
+                  provident, recusandae ea. Aperiam doloremque harum esse
+                  explicabo libero provident facere. Nisi, corporis.
+                </p>
+                <p class="text--white-mid">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Nihil cum, quae ipsa itaque aliquam tenetur repellat ratione a
+                  nulla magni harum est eius! Eaque est officiis dicta accusamus
+                  reiciendis nobis?
+                </p>
+                <a href="#" class="btn btn--fill text--white">Baixar CV</a>
               </div>
             </div>
           </div>
         </section>
+        <!-- end ABOUT -->
+        <!-- start PROJECTS -->
+        <section class="projects">
+          <div class="projects__wrap contain">
+            <div class="projects__content">
+              <h2 class="text--white text--center">Projetos</h2>
+              <hr class="heading-divider text--center" />
+              <div class="projects__row">
+                <div class="projects__banner">
+                  <h3 class="text--white text--center">
+                    30 Sites<br />em<br />30 Dias
+                  </h3>
+                </div>
+                <div class="projects__text text--center text--lg-left"">
+                  <p class="text--white-mid">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolores blanditiis vitae nulla animi. Nam rerum expedita,
+                    incidunt animi vel mollitia libero enim deserunt quos soluta
+                    error eius eveniet non quisquam.
+                  </p>
+                  <p class="text--white-mid">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Maxime iusto explicabo quia corrupti facere eaque aliquam
+                    quisquam eveniet error, ullam quos fuga incidunt at delectus
+                    repudiandae repellat libero? Vero, consequuntur.
+                  </p>
+                  <a href="#" class="btn btn--fill text--white">Veja no Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end PROJECTS -->
+        <!-- start CONTATO -->
+        <section class="contato">
+          <div class="contato__wrap contain">
+            <div class="contato__content">
+              <h2 class="text--white text--center">Contato</h2>
+              <hr class="heading-divider text--center" />
+              <div class="contato__row">
+                <div class="contato__text text--center">
+                  <p class="text--white-mid">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolores blanditiis vitae nulla animi. Nam rerum expedita,
+                    incidunt animi vel mollitia libero enim deserunt quos soluta
+                    error eius eveniet non quisquam.
+                  </p>
+                  <ul class="contato__social">
+                    <li>
+                      <a href="#"><img src="./images/icon-linkedin.svg" alt="linkedin"/></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./images/icon-github.svg" alt="github"/></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./images/icon-twitter.svg" alt="twitter"/></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end CONTATO -->
+        <!-- start FOOTER -->
+        <footer>
+          <div class="footer__wrap">
+            <div class="footer__content text--white-mid text--center">
+              <p>Feito com ❤ por programação</p>
+              <p>Copyright &copy; 2021 <span class="text--highlight">Leonardo</span>. Todos os direitos reservados</p>
+            </div>
+          </div>
+        </footer>
+        <!-- end FOOTER -->
       </main>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>
