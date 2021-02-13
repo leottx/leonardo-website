@@ -361,6 +361,11 @@ ABOUT
   margin-bottom: 1.6rem
 }
 
+.about__text strong {
+  font-weight: 600;
+  color: rgba(255, 255, 255, .6)
+}
+
 .about__text h3 {
   font-size: 2.4rem;
   font-weight: 500;
@@ -426,6 +431,11 @@ PROJECTS
     max-width: 41.666667%;
     margin-right: 3.9rem;
   }
+}
+
+.underline {
+  color: rgba(255, 255, 255, .6);
+  text-decoration: underline;
 }
 
 .projects__text p {
