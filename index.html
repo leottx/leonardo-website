@@ -15,14 +15,18 @@
           <a href="index.html" class="logo">
             <img src="./images/logo-semibold.svg" alt="logo" />
           </a>
-          <a href="#" class="nav-toogle">
-            <img src="./images/icon-menu.svg" alt="menu" />
-          </a>
-          <ul class="navbar">
-            <li><a href="index.html#about" class="text--white">Sobre</a></li>
-            <li><a href="index.html#contato" class="text--white">Contato</a></li>
-            <li><a href="index.html#projects" class="btn btn--wire text--white">Portfólio</a></li>
-          </ul>
+          <button class="nav-toogle" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-collapse">
+            <ul class="navbar">
+              <li><a href="index.html#about" class="nav-link text--white">Sobre</a></li>
+              <li><a href="index.html#contato" class="nav-link text--white">Contato</a></li>
+              <li><a href="index.html#projects" class="btn btn--wire text--white">Portfólio</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
       <!-- end HEADER -->
@@ -55,7 +59,7 @@
           <div class="about__wrap contain">
             <div class="about__content">
               <div class="about__pic">
-                <img src="https://via.placeholder.com/500x625" alt="Foto de Leonardo"/>
+                <img src="./images/myself.jpg" alt="Foto de Leonardo"/>
               </div>
               <div class="about__text text--center text--lg-left">
                 <h2 class="text--white">Sobre mim</h2>
@@ -63,7 +67,7 @@
                   Olá! Eu sou o <span class="text--highlight">Leonardo.</span>
                 </h3>
                 <p class="text--white-mid">
-                  Depois de muito tempo sem uma perspectiva clara quanto a carreira que me faria feliz,
+                  Depox'is de muito tempo sem uma perspectiva clara quanto a carreira que me faria feliz,
                   sem saber se um dia me descobriria ou se de fato existiria um propósito motor capaz
                   de fazer de todos os dias, dias inspiradores, me encontrei com a
                   programação. 
@@ -151,6 +155,6 @@
         <!-- end FOOTER -->
       </main>
     </div>
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
