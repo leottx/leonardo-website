@@ -15,6 +15,7 @@
           <a href="index.html" class="logo">
             <img src="./images/logo-semibold.svg" alt="logo" />
           </a>
+          <!-- start MOBILE MENU -->
           <button class="nav-toogle" type="button">
             <span></span>
             <span></span>
@@ -24,9 +25,11 @@
             <ul class="navbar">
               <li><a href="index.html#about" class="nav-link text--white">Sobre</a></li>
               <li><a href="index.html#contato" class="nav-link text--white">Contato</a></li>
-              <li><a href="index.html#projects" class="btn btn--wire text--white">Portfólio</a></li>
+              <li><a href="index.html#project" class="btn btn--wire text--white">Portfólio</a></li>
             </ul>
           </div>
+          <!-- end MOBILE MENU -->
+          <a href="index.html#projects" class="btn btn--wire text--white btn-desktop">Portfólio</a>
         </nav>
       </header>
       <!-- end HEADER -->
@@ -38,7 +41,6 @@
           <div class="hero__container">
             <div class="hero__content">
               <div class="hero__wrap">
-                <!-- <p class="text--white welcome">Bem vindo</p> -->
                 <h1 class="text--white">
                   Me chamo<span>Leonardo Teixeira</span>
                 </h1>
@@ -67,17 +69,14 @@
                   Olá! Eu sou o <span class="text--highlight">Leonardo.</span>
                 </h3>
                 <p class="text--white-mid">
-                  Depox'is de muito tempo sem uma perspectiva clara quanto a carreira que me faria feliz,
-                  sem saber se um dia me descobriria ou se de fato existiria um propósito motor capaz
-                  de fazer de todos os dias, dias inspiradores, me encontrei com a
-                  programação. 
+                  Depois de muito tempo sem uma perspectiva clara quanto a carreira que me faria feliz, sem saber se um dia me descobriria ou se de fato existiria um propósito motor capaz de fazer de todos os dias, dias inspiradores, me encontrei com a programação. 
                 </p>
                 <p class="text--white-mid">
                   Criar soluções <strong>focadas em pessoas</strong> e que entreguem <strong>experiências singulares</strong> foi o que fisgou
                   meu interesse e abriu meus olhos para um anceio íntimo que sempre esteve comigo, colaborar
                   com pessoas e ajudá-las a concretizarem grandes ideias.
                 </p>
-                <a href="#" class="btn btn--fill text--white">Baixar CV</a>
+                <a href="./leonardo-curriculo-tecnico.pdf" class="btn btn--fill text--white">Baixar CV</a>
               </div>
             </div>
           </div>
@@ -85,17 +84,18 @@
         <!-- end ABOUT -->
         <!-- start PROJECTS -->
         <section class="projects" id="projects">
-          <div class="projects__wrap contain">
+          <div class="projects__container contain">
             <div class="projects__content">
               <h2 class="text--white text--center">Projetos</h2>
-              <hr class="heading-divider text--center" />
-              <div class="projects__row">
-                <div class="projects__banner">
+              <hr class="divider text--center" />
+              <!-- start NEW PROJECT -->
+              <div class="project__wrapper row">
+                <div class="project__banner">
                   <h3 class="text--white text--center">
                     30 Sites<br />em<br />30 Dias
                   </h3>
                 </div>
-                <div class="projects__text text--center text--lg-left"">
+                <div class="project__text text--center text--lg-left">
                   <p class="text--white-mid">
                     Por um total de 30 crepúsculos me dediquei a criar um site diferente por dia e limitado
                     à carga horária de no máxima 4 horas por desafio. Foram dias intensos e com adapdações diárias no meu
@@ -107,9 +107,25 @@
                     iteração. Embora a tentação de mergulhar em detalhes irrelevantes tenha sido presente durante muitos momentos nos primeiros
                     projetos, a cada dia me notei mais conectado a meta de entregar o essencial e deixar polimentos para iterações futuras.
                   </p>
-                  <a href="#" class="btn btn--fill text--white">Veja no Github</a>
+                  <a href="https://github.com/leottx/30-sites-30-dias" class="btn btn--fill text--white">Veja no Github</a>
                 </div>
               </div>
+              <!-- end NEW PROJECT -->
+              <!-- start NEW PROJECT -->
+              <div class="project__wrapper row--reverse">
+                <div class="project__banner">
+                  <h3 class="text--white text--center">
+                    10 Dias de Sass
+                  </h3>
+                </div>
+                <div class="project__text text--center text--lg-left"">
+                  <p class="text--white-mid">
+                    Criei 10 páginas em 10 dias utilizando o pré-processador Sass. O intuito foi aprender as features principais dessa tecnologia de forma prática e focando no essencial para destilar o máximo de aprendizado possível. 
+                  </p>
+                  <a href="https://github.com/leottx/30-sites-30-dias" class="btn btn--fill text--white">Veja no Github</a>
+                </div>
+              </div>
+              <!-- end NEW PROJECT -->
             </div>
           </div>
         </section>
@@ -119,7 +135,7 @@
           <div class="contato__wrap contain">
             <div class="contato__content">
               <h2 class="text--white text--center">Contato</h2>
-              <hr class="heading-divider text--center" />
+              <hr class="divider text--center" />
               <div class="contato__row">
                 <div class="contato__text text--center">
                   <p class="text--white-mid">
