@@ -1,0 +1,27 @@
+{
+  "name": "rebuild-my-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass ./src/style.scss ./dist/style.css && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leottx/rebuild-my-website.git"
+  },
+  "author": "Leonardo Teixeir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leottx/rebuild-my-website/issues"
+  },
+  "homepage": "https://github.com/leottx/rebuild-my-website#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "jump.js": "^1.0.2",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  }
+}

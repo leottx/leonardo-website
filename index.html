@@ -4,173 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/dist/style.css">
     <title>Leonardo / Front-end</title>
   </head>
   <body>
-    <div class="container">
-      <!-- start HEADER -->
-      <header>
-        <nav class="primary-menu contain">
+    <!-- start HEADER -->
+    <header>
+      <nav class="primary-menu">
+        <div class="menu__wrapper">
           <a href="index.html" class="logo">
             <img src="./images/logo-semibold.svg" alt="logo" />
           </a>
-          <!-- start MOBILE MENU -->
           <button class="nav-toogle" type="button">
             <span></span>
             <span></span>
             <span></span>
           </button>
-          <div class="nav-collapse">
-            <ul class="navbar">
-              <li><a href="index.html#about" class="nav-link text--white">Sobre</a></li>
-              <li><a href="index.html#contato" class="nav-link text--white">Contato</a></li>
-              <li><a href="index.html#projects" class="btn btn--wire text--white">Portfólio</a></li>
-            </ul>
-          </div>
-          <!-- end MOBILE MENU -->
-          <a href="index.html#projects" class="btn btn--wire text--white btn-desktop">Portfólio</a>
-        </nav>
-      </header>
-      <!-- end HEADER -->
-      <main>
-        <!-- start HERO -->
-        <div class="hero">
-          <div class="hero__mask"></div>
-          <div class="hero__bg"></div>
-          <div class="hero__container">
-            <div class="hero__content">
-              <div class="hero__wrap">
-                <h1 class="text--white">
-                  Me chamo<span>Leonardo Teixeira</span>
-                </h1>
-                <h2 class="text--white">
-                  Desenvolvedor Front-end de<br />Limeira-SP, Brasil.
-                </h2>
-                <p class="text--white"></p>
-              </div>
-            </div>
-          </div>
-          <a href="index.html#about" class="scroll-down">
-            <img class="animated" src="./images/icon-down-arrow.svg" />
-          </a>
+          <ul class="nav__options">
+            <li><a href="https://www.linkedin.com/in/leonardo-tadeu-teixeira/" target="_blank">LinkedIn</a></li>
+            <li><a href="#" id="btn-contact-sm">Contato</a></li>
+            <li><a href="#" id="btn-portfolio-sm" class="btn--empty">Portifólio</a></li>
+          </ul>
+          <ul class="nav__large">
+            <li><a href="https://www.linkedin.com/in/leonardo-tadeu-teixeira/" target="_blank">LinkedIn</a></li>
+            <li><a href="#contact" id="btn-contact-lg">Contato</a></li>
+            <li><a href="#" id="btn-portfolio-lg" class="btn--empty" >Portifólio</a></li>
+          </ul>
         </div>
-        <!-- end HERO -->
-        <!-- start ABOUT -->
-        <section class="about" id="about">
-          <div class="about__wrap contain">
-            <div class="about__content">
-              <div class="about__pic">
-                <img src="./images/myself.jpg" alt="Foto de Leonardo"/>
-              </div>
-              <div class="about__text text--center text--lg-left">
-                <h2 class="text--white">Sobre mim</h2>
-                <h3 class="text--white">
-                  Olá! Eu sou o <span class="text--highlight">Leonardo.</span>
-                </h3>
-                <p class="text--white-mid">
-                  Depois de muito tempo sem uma perspectiva clara quanto a carreira que me faria feliz, sem saber se um dia me descobriria ou se de fato existiria um propósito motor capaz de fazer de todos os dias, dias inspiradores, me encontrei com a programação. 
-                </p>
-                <p class="text--white-mid">
-                  Criar soluções <strong>focadas em pessoas</strong> e que entreguem <strong>experiências singulares</strong> foi o que fisgou
-                  meu interesse e abriu meus olhos para um anceio íntimo que sempre esteve comigo, colaborar
-                  com pessoas e ajudá-las a concretizarem grandes ideias.
-                </p>
-                <a href="./leonardo-curriculo-tecnico.pdf" class="btn btn--fill text--white">Baixar CV</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end ABOUT -->
-        <!-- start PROJECTS -->
-        <section class="projects" id="projects">
-          <div class="projects__container contain">
-            <div class="projects__content">
-              <h2 class="text--white text--center">Projetos</h2>
-              <hr class="divider text--center" />
-              <!-- start NEW PROJECT -->
-              <div class="project__wrapper row">
-                <div class="project__banner">
-                  <h3 class="text--white text--center">
-                    30 Sites<br />em<br />30 Dias
-                  </h3>
-                </div>
-                <div class="project__text text--center text--lg-left">
-                  <p class="text--white-mid">
-                    Por um total de 30 crepúsculos me dediquei a criar um site diferente por dia e limitado
-                    à carga horária de no máxima 4 horas por desafio. Foram dias intensos e com adapdações diárias no meu
-                    fluxo de trabalho, pois sempre após a conclusão de um novo site algumas introspeções ocorriam afim
-                    de aflorar aperfeiçoamentos.  
-                  </p>
-                  <p class="text--white-mid">
-                    Um dos aprendizados mais notáveis foi aprender a lidar com <a href="https://pt.wikipedia.org/wiki/Lei_de_Parkinson" class="underline">Lei de Parkinson</a> e focar na essência de cada
-                    iteração. Embora a tentação de mergulhar em detalhes irrelevantes tenha sido presente durante muitos momentos nos primeiros
-                    projetos, a cada dia me notei mais conectado a meta de entregar o essencial e deixar polimentos para iterações futuras.
-                  </p>
-                  <a href="https://github.com/leottx/30-sites-30-dias" class="btn btn--fill text--white">Veja no Github</a>
-                </div>
-              </div>
-              <!-- end NEW PROJECT -->
-              <!-- start NEW PROJECT -->
-              <div class="project__wrapper row--reverse">
-                <div class="project__banner">
-                  <h3 class="text--white text--center">
-                    10 Dias de Sass
-                  </h3>
-                </div>
-                <div class="project__text text--center text--lg-left"">
-                  <p class="text--white-mid">
-                    Criei 10 páginas em 10 dias utilizando o pré-processador Sass. O intuito foi aprender as features principais dessa tecnologia de forma prática e focando no essencial para destilar o máximo de aprendizado possível. 
-                  </p>
-                  <a href="https://github.com/leottx/10-dias-sass" class="btn btn--fill text--white">Veja no Github</a>
-                </div>
-              </div>
-              <!-- end NEW PROJECT -->
-            </div>
-          </div>
-        </section>
-        <!-- end PROJECTS -->
-        <!-- start CONTATO -->
-        <section class="contato" id="contato">
-          <div class="contato__wrap contain">
-            <div class="contato__content">
-              <h2 class="text--white text--center">Contato</h2>
-              <hr class="divider text--center" />
-              <div class="contato__row">
-                <div class="contato__text text--center">
-                  <p class="text--white-mid">
-                    Ficarei feliz em ajudar a sua empresa ou projeto a dar um passo adiante.<br>
-                    Por favor, sinta-se à vontade para entrar em contato comigo.
-                  </p>
-                  <ul class="contato__social">
-                    <li>
-                      <a href="https://www.linkedin.com/in/leonardo-tadeu-teixeira/"><img src="./images/icon-linkedin.svg" alt="linkedin icon"/></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/leottx/"><img src="./images/icon-github.svg" alt="github icon"/></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/leottx_"><img src="./images/icon-twitter.svg" alt="twitter icon"/></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end CONTATO -->
-        <!-- start FOOTER -->
-        <footer>
-          <div class="footer__wrap">
-            <div class="footer__content text--white-mid text--center">
-              <p>Feito com ❤ por programação</p>
-              <p>Copyright &copy; 2021 <span class="text--highlight">Leonardo</span>. Todos os direitos reservados</p>
-            </div>
-          </div>
-        </footer>
-        <!-- end FOOTER -->
-      </main>
+      </nav>
+    </header>
+    <!-- end HEADER -->
+    <!-- start HERO -->
+    <div class="hero">
+      <div class="hero__title">
+        <h1>Olá, meu nome é Leonardo. <br> Sou um Dev Front-end fascinado por programação e tecnologia.</h1>
+        <p class="text--mid">
+          Limeira - SP, Brasil
+          <img src="./images/icon-map-marker.svg" alt="ícone da localidade">
+        </p>
+      </div>
+      <div class="hero__pic">
+        <img src="./images/me.jpg" alt="Retrato do Leonardo">
+      </div>
+      <div class="hero__skills">
+        <h2>Habilidades</h2>
+        <ul>
+          <li><img src="./images/icon-js.svg" alt="JavaScript"></li> <!-- JavaScript-->
+          <li><img src="./images/icon-html.svg" alt="HTML"></li> <!-- HTML -->
+          <li><img src="./images/icon-css.svg" alt="CSS"></a></li> <!-- CSS -->
+          <li><img src="./images/icon-sass.svg" alt="Sass"></li> <!-- Sass -->
+          <li><img src="./images/icon-npm.svg" alt="NPM"></li> <!-- NPM -->
+          <li><img src="./images/icon-git.svg" alt="Git"></li> <!-- Git -->
+        </ul>
+        <a href="./leonardo-teixeira-curriculo.pdf" download="leonardo-teixeira-curriculo" class="btn btn-cv">
+          Baixar CV
+          <img src="./images/icon-arrow-down.svg" alt="ícone download">
+        </a>
+      </div>
     </div>
-    <script src="./index.js"></script>
+    <!-- end HERO -->
+    <!-- start PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__wrapper">
+        <h2>Projetos</h2>
+        <div class="card__wrapper">
+          <div class="card">
+            <img src="./images/30-dias-30-sites-banner.jpg" alt="Banner do projeto" class="banner">
+            <div class="card__text">
+              <h3>30 Sites em 30 dias</h3>
+              <p>Clonei uma página por dia durante o período de um mês. Me aprofundei em recursos modernos do CSS como o flex-box, grid e conheci várias funções novas (min, max, clamp, etc) que tornaram essa linguagem ainda mais poderosa.</p>
+              <a href="#" class="btn">
+                Veja no Github
+                <img src="./images/icon-arrow-right.svg" alt="ícone download">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/10-dias-de-sass.jpg" alt="Banner do projeto" class="banner">
+            <div class="card__text">
+              <h3>10 Dias de Sass</h3>
+              <p>Criei 10 páginas em 10 dias utilizando o pré-processador Sass. O intuito foi aprender as principais features dessa tecnologia de forma prática e direta para assim extrair o máximo de aprendizado.</p>
+              <a href="https://github.com/leottx/10-dias-sass" class="btn">
+                Veja no Github
+                <img src="./images/icon-arrow-right.svg" alt="ícone download">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end PORTFOLIO -->
+    <!-- start CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__wrapper">
+        <h2>Contato</h2>
+        <div class="contact__text">
+          <p>Ficarei feliz em ajudar a sua empresa ou projeto a dar um passo adiante.<br> Por favor, sinta-se à vontade para entrar em contato comigo.</p>
+          <ul class="contact__social">
+            <li>
+              <a class="linkedin" href="https://www.linkedin.com/in/leonardo-tadeu-teixeira/" target="_blank"><img src="./images/icon-linkedin.svg" alt="Link para o Linkedin"/></a>
+            </li>
+            <li>
+              <a class="github" href="https://github.com/leottx/" target="_blank"><img src="./images/icon-github.svg" alt="Link para o Github"/></a>
+            </li>
+            <li>
+              <a class="twitter" href="https://twitter.com/leottx_" target="_blank"><img src="./images/icon-twitter.svg" alt="Link para o Twitter"/></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end CONTACT -->
+    <!-- start FOOTER -->
+    <footer>
+      <div class="footer__content">
+        <p>Feito com ❤ por programação</p>
+        <p>Copyright &copy; 2021 <span class="text--highlight">Leonardo</span>. Todos os direitos reservados</p>
+      </div>
+    </footer>
+  <!-- end FOOTER -->
   </body>
+  <script type="module" src="/dist/bundle.js"></script>
 </html>
