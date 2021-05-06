@@ -1,4 +1,5 @@
 import jump from 'jump.js';
+import './style.scss'
 
 // Obtendo o elemento <button class="nav__toggle">
 const $toggleBtn = document.querySelector('.nav-toogle');
@@ -76,53 +77,3 @@ $btnPortfolioSm.addEventListener('click', function() {
   });
   toggleMenu();
 });
-
-
-
-
-
-
-
-
-
-/*// Obtendo o botão <a class="btn-contact-lg">
-const $btnContactLg = document.querySelector('#btn-contact-lg');
-// Obtendo o botão a <a class="btn-portfolio-lg">
-const $btnPortfolioLg = document.querySelector('#btn-portfolio-lg');
-
-// Essa função recebe dois parâmetros. O primeiro consiste no elemento para o qual a página deve scrollar e o segundo a duração da animação de rolagem
-const smoothScroll = function(target, duration) {
-  // Obtendo o elemento para o qual a página deverá scrollar
-  var $target = document.querySelector(target);
-  // Obtendo a posição da aresta superior do elemento alvo do scroll
-  const targetPosition = $target.getBoundingClientRect().top;
-  // Obtendo a distância inicial do scroll em relação ao eixo Y da viewport
-  const startPosition = window.pageYOffset;
-  // Calculando a distancia entre o alvo e a posição atual do scroll
-  const distance = targetPosition - startPosition;
-  // Tempo inicial
-  let startTime = null;
-
-  // Essa função executa a animação de scroll enquanto o tempo passado desde o momento do clique for menor que a duração, no caso, 1 segundo.
-  function animation(currentTime) {
-    if (startTime === null) {startTime = currentTime;}
-    let timeElapsed = currentTime - startTime;
-    const run = ease(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, run);
-    if(timeElapsed < duration) {requestAnimationFrame(animation);}
-  }
-
-  function ease(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) {return c / 2 * t * t + b;}
-    t--;
-    return -c / 2 * (t * (t-2) - 1) + b;
-  }
-
-  requestAnimationFrame(animation);
-}
-
-$btnContactLg.addEventListener('click', function() {
-  smoothScroll('.contact', 1000);
-});
-*/

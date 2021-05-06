@@ -25,7 +25,7 @@
     $text-mid: 2.4rem;
     $white: #fff;
 
-  // Montserrat
+  //Montserrat
   @font-face {
     src: url(../fonts/Montserrat-Light.woff);
     font-family: "Montserrat";
@@ -229,57 +229,113 @@
     height: 30px;
     margin-left: auto;
     position: relative;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    transition: all .5s ease;
-    width: 25px;
     &:focus {
       outline: none;
     }
     &.open {
       span {
-        &:first-child {
-          top: 6.25px;
-          left: 3.5px;
+        background-color: transparent;
+        &::before,
+        &::after {
+          margin: 0;
+          transition-delay: 0s, 0.2s;
+        }
+        &::before {
           transform: rotate(45deg);
         }
-        &:nth-child(2) {
-          opacity: 0;
-          width: 0%;
-        }
-        &:last-child {
-          top: 22.75px;
-          left: 3.5px;
-          transform: rotate(-45deg)
+        &::after {
+          transform: rotate(-45deg);
         }
       }
     }
     span {
-      background-color: rgba($color: $white, $alpha: .8);
-      border-radius: 4px;
-      display: block;
-      height: 3px;
-      opacity: 1;
-      position: absolute;
-      right: 0;
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-      &:first-child {
-        top: 7px;
-        transform-origin: left;
-        width: 100%;
+      transition-duration: 0s;
+      transition-delay: 0.2s;
+      display: inline-block;
+      top: -0.4rem;
+      width: 2.5rem;
+      height: 0.3rem;
+      background-color: #E0D9FB;
+      position: relative;
+      &::before,
+      &::after {
+        transition-delay: 0.2s, 0s;
+        transition-duration: 0.2s;
+        transition-property: margin, transform;
+        display: block;
+        content: '';
+        position: absolute;
+        width: 2.5rem;
+        height: 0.3rem;
+        background-color: #E0D9FB;
       }
-      &:nth-child(2) {
-        top: 14px;
-        width: 60%;
+      &::before {
+        margin-top: -.7rem;
       }
-      &:last-child {
-        top: 21px;
-        transform-origin: left;
-        width: 100%;
+      &::after {
+        margin-top: .7rem;
       }
     }
   }
+  // .nav-toogle {
+  //   background: transparent;
+  //   border: none;
+  //   cursor: pointer;
+  //   display: block;
+  //   height: 30px;
+  //   margin-left: auto;
+  //   position: relative;
+  //   -webkit-transform: rotate(0deg);
+  //   transform: rotate(0deg);
+  //   transition: all .5s ease;
+  //   width: 25px;
+  //   &:focus {
+  //     outline: none;
+  //   }
+  //   &.open {
+  //     span {
+  //       &:first-child {
+  //         top: 6.25px;
+  //         left: 3.5px;
+  //         transform: rotate(45deg);
+  //       }
+  //       &:nth-child(2) {
+  //         opacity: 0;
+  //         width: 0%;
+  //       }
+  //       &:last-child {
+  //         top: 22.75px;
+  //         left: 3.5px;
+  //         transform: rotate(-45deg)
+  //       }
+  //     }
+  //   }
+  //   span {
+  //     background-color: rgba($color: $white, $alpha: .8);
+  //     border-radius: 4px;
+  //     display: block;
+  //     height: 3px;
+  //     opacity: 1;
+  //     position: absolute;
+  //     right: 0;
+  //     -webkit-transform: rotate(0deg);
+  //     transform: rotate(0deg);
+  //     &:first-child {
+  //       top: 7px;
+  //       transform-origin: left;
+  //       width: 100%;
+  //     }
+  //     &:nth-child(2) {
+  //       top: 14px;
+  //       width: 60%;
+  //     }
+  //     &:last-child {
+  //       top: 21px;
+  //       transform-origin: left;
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 
   .nav__options {
     font-family: 'Montserrat', 'Open Sans', sans-serif;

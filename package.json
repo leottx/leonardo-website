@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass ./src/style.scss ./dist/style.css && webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,15 @@
   },
   "homepage": "https://github.com/leottx/rebuild-my-website#readme",
   "devDependencies": {
-    "sass": "^1.32.8"
-  },
-  "dependencies": {
-    "jump.js": "^1.0.2",
+    "css-loader": "^5.2.4",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "jump.js": "^1.0.2"
   }
 }
